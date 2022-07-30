@@ -1,11 +1,13 @@
 import './App.css';
-import ReceiptFrom from './ReceiptFrom.js';
+import Filter from './Filter';
+// import ReceiptFrom from './ReceiptFrom.js';
 
 
 function App() {
   return (
     <div className="App">
-      <ReceiptFrom />
+      {/* <ReceiptFrom /> */}
+      <Filter />
     </div>
   );
 }

@@ -17,7 +17,12 @@ function ReceiptFrom() {
         setAmount('')
         setValue('cash')
         setRemark('')
-        console.log(store)
+
+    }
+
+    const handlefilter = () => {
+        const filteredItems = items.filter(item => item.Value !== 'paytm')
+        setItems(filteredItems)
     }
 
     return (
@@ -66,7 +71,8 @@ function ReceiptFrom() {
                 </div>
                 <div className='receipt-form' >
                     <div style={{ width: '25%' }}>
-                        <label htmlFor='remark'>Remark</label></div>
+                        <label htmlFor='remark'>Remark</label>
+                    </div>
                     <input type='text'
                         placeholder='Enter remark'
                         value={Remark}
@@ -75,13 +81,19 @@ function ReceiptFrom() {
                         style={{ width: '450px' }}
                     />
                 </div>
+                <div>
+                    <input type='checkbox' value='car' />
+                    <label htmlFor='car'>CAR</label>
+                    <input type='checkbox' value='bike' />
+                    <label htmlFor='bike'>BIKE</label>
+
+                </div>
                 <div className='button'>
                     <button className='cancel-btn'>CANCEL</button>
                     <button type='sumbit' className='sumbit-btn'>SUMBIT</button>
                 </div>
             </form>
-
-
+            <button onClick={handlefilter} className='sumbit-btn' style={{ backgroundColor: 'blue' }}>Filter</button>
             {items.map((item) => {
                 return (
                     <div className='receipt-detail'>
