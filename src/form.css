@@ -1,0 +1,75 @@
+.receipt {
+    background-color: rgba(220, 220, 220, 0.2);
+    width: 45rem;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.receipt-form {
+    margin: 5px 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.required::after {
+    content: '*';
+    color: red;
+}
+
+
+.receipt-detail {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+
+
+.input-form {
+    border: 2px solid rgb(169, 169, 169);
+    height: 24px;
+    border-radius: 3px;
+    font-size: 12px;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.button {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    width: 100px;
+    height: 50px;
+    background-color: rgba(220, 220, 220, 0.1);
+    color: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    margin-right: 90px;
+    cursor: pointer;
+}
+
+
+
+.sumbit-btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 3px;
+    color: white;
+    background-color: rgba(0, 128, 0, 0.6);
+    border: none;
+    margin-right: 60px;
+    cursor: pointer;
+    box-shadow: 1px .5px rgb(0, 128, 0);
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 5px;
+}
